@@ -107,11 +107,11 @@ home_keyboard_pm = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 text="🌐 My Website",
-                url=f"https://szrosebot.ml",
+                url=f"https://t.me/+gyZFP-mFh7YyN2Q1",
             ),
             InlineKeyboardButton(
                 text="🔰News Channel",
-                url=f"https://t.me/szroseupdates",
+                url=f"https://t.me/+gyZFP-mFh7YyN2Q1",
             )
         ],
     ]
@@ -182,11 +182,11 @@ async def start(client, message: Message, _):
         await message.reply(f"""
 [👋]({random.choice(IMG)}) Hey there {message.from_user.mention}, 
 
-   My name is Rose, an  advanced telegram Group management Bot For helpYou Protect Your Groups & Suit For All Your Needs. 
+   My name is Rolex, an  advanced telegram Group management Bot For helpYou Protect Your Groups & Suit For All Your Needs. 
 I currently manage about `{len(served_chats)}` groups.I have over `{len(served_users)}` users
 
 ⚒ Send Me /help For Get Commands. 
-👨‍💻Dᴇᴠᴇʟᴏᴘᴇʀ : @supunma
+👨‍💻Dᴇᴠᴇʟᴏᴘᴇʀ : @thilak2003
 """,
             reply_markup=home_keyboard_pm,
         )
@@ -273,12 +273,12 @@ async def startcq(client,CallbackQuery, _):
             text=f"""
 👋 Hey there {CallbackQuery.from_user.mention}, 
 
-   My name is Rose ,an  advanced telegram Group management Bot For help 
+   My name is Rolex ,an  advanced telegram Group management Bot For help 
 You Protect Your Groups & Suit For All Your Needs. 
 I currently manage about `{len(served_chats)}` groups.I have over `{len(served_users)}` users
 
  ⚒ Send Me /help For Get Commands. 
-👨‍💻Dᴇᴠᴇʟᴏᴘᴇʀ : @supunma
+👨‍💻Dᴇᴠᴇʟᴏᴘᴇʀ : @thilak2003
 """,
             disable_web_page_preview=True,
             reply_markup=home_keyboard_pm)
@@ -329,7 +329,7 @@ async def help_button(client, query, _):
                 "Here is the help for", HELPABLE[module].__MODULE__
             )
             + HELPABLE[module].__HELP__
-            + "\n👨‍💻Dᴇᴠᴇʟᴏᴘᴇʀ : @supunma"
+            + "\n👨‍💻Dᴇᴠᴇʟᴏᴘᴇʀ : @thilak2003"
         )
         if hasattr(HELPABLE[module], "__helpbtns__"):
                        button = (HELPABLE[module].__helpbtns__) + [[InlineKeyboardButton("« Back", callback_data="bot_commands")]]
